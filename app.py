@@ -89,7 +89,7 @@ def cv_parser():
     add_more = True
     
     while add_more: 
-        put_info("** Note: This is a demo application works only for Job Titles related to Data Science **")
+        put_text("** Note: This is a demo application works only for Job Titles related to Data Science **")
         info = input_group("Enter Details : ",[
           input("Enter Job Title :", name='job_title'),
           input("Enter Skillset :", name='skill'),
