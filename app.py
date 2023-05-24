@@ -25,7 +25,7 @@ app = Flask(__name__)
 
 def predict_resume_scoring(job_title,skill,education,experience):
     
-    database = pd.read_csv(r'02_Database\full_database.csv')
+    database = pd.read_csv('full_database.csv')
     job_title = job_title.lower()
     skill = skill.lower()
     education = education.lower()
