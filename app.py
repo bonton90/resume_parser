@@ -69,17 +69,17 @@ def predict_resume_scoring(job_title,skill,education,experience):
     selected_resume = selected_resume.sort_values(by = ['Score'],ascending=False)
     selected_resume = selected_resume.reset_index(drop=True)
     selected_resume.index =  selected_resume.index + 1 
-    selected_resume.to_csv("03_Selected_CVs_File\selected_resume.csv")
+    #selected_resume.to_csv("03_Selected_CVs_File\selected_resume.csv")
     #database.to_csv("03_Selected_CVs_File\resulted_resume.csv")
-    origin = r'01_Raw_CVs/'
-    target = r'04_Matched_CVs_pdf/'
+    #origin = r'01_Raw_CVs/'
+    #target = r'04_Matched_CVs_pdf/'
 
-    files = selected_resume['Matched_CV'].to_list()
+    #files = selected_resume['Matched_CV'].to_list()
     
-    for file in files:
-        shutil.copy(origin + file ,target + file)
+    #for file in files:
+       # shutil.copy(origin + file ,target + file)
 
-    print(selected_resume)
+    #print(selected_resume)
    
     return selected_resume
 
@@ -141,7 +141,7 @@ def cv_parser():
 
 
 
-app.add_url_rule('/cv_parser', 'webio_view', webio_view( cv_parser),
+app.add_url_rule('/cv_parser_v1', 'webio_view', webio_view( cv_parser),
             methods=['GET', 'POST', 'OPTIONS'])
 
 
