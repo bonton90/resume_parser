@@ -121,7 +121,7 @@ def cv_parser():
                     {"Job_Title":job_title,"SkillSet":skill,"TopCVFound":selected_resume}
                 ], header=["Job_Title", "SkillSet","TopCVFound"]) 
 
-        put_code("**Note: All the matched CVs are stored in 04_Matched_CVs_pdf folder")   
+        #put_code("**Note: All the matched CVs are stored in 04_Matched_CVs_pdf folder")   
         
         add_more = actions(label="Would you like to search more ?", 
                         buttons=[{'label': 'Yes', 'value': True}, 
