@@ -146,4 +146,4 @@ app.add_url_rule('/cv_parser_v1', 'webio_view', webio_view( cv_parser),
 
 
 
-app.run(host='localhost', port=80)
+app.run()
