@@ -89,13 +89,12 @@ def cv_parser():
     add_more = True
     
     while add_more: 
-        
+        put_info("** Note: This is a demo application works only for Job Titles related to Data Science **")
         info = input_group("Enter Details : ",[
-          input("Enter Job Title you are looking for :", name='job_title'),
-          input("Enter Skillset you are looking for :", name='skill'),
-          input("Enter Education you are looking for :", name='education'),
-          
-          input("Enter years of experience you are looking for :", name='experience',type=FLOAT)
+          input("Enter Job Title :", name='job_title'),
+          input("Enter Skillset :", name='skill'),
+          input("Enter Education :", name='education'),
+          input("Enter years of experience :", name='experience',type=FLOAT)
         ])
         print(info['job_title'], info['skill'],info['education'],info['experience'])
         job_title=info['job_title']
