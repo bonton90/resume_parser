@@ -84,7 +84,7 @@ def predict_resume_scoring(job_title,skill,education,experience):
 def cv_parser():
     
     
-    put_code("----- Welcome to CV Parser Application -----")
+    put_info("-----<< Welcome to CV Parser Application >>-----")
     count=0
     add_more = True
     
