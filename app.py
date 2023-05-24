@@ -20,9 +20,6 @@ import time
 app = Flask(__name__)
 
 
-
-
-
 def predict_resume_scoring(job_title,skill,education,experience):
     
     database = pd.read_csv('full_database.csv')
@@ -145,5 +142,5 @@ app.add_url_rule('/cv_parser_v1', 'webio_view', webio_view( cv_parser),
             methods=['GET', 'POST', 'OPTIONS'])
 
 
-
-app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
