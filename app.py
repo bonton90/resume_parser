@@ -103,14 +103,14 @@ def cv_parser():
         experience = info['experience']
         
             
-        put_text('You have searched fors Job Tile : ',job_title)
+        put_text('You have searched for Job Tile : ',job_title)
         put_text('Selected Skillset :' ,skill)
         put_text('Required Degree :' ,education)
         put_text('Required experience :' ,experience)
         put_text('------------------------------------------------')
         #put_text(df)
         with put_loading():
-            put_code("Plz Wait..We are working on magic !! Fetching top CVs for you..")
+            put_code("Plz Wait.. While we work our charm !! Fetching top CVs for you..")
             time.sleep(3)  # Some time-consuming operations
         put_text("Matched Results : ")
         
@@ -128,7 +128,7 @@ def cv_parser():
         
         count= count+1
         put_text("--------------------------")
-        put_text(f"You have searched for {count} CVs | Search results shown above. ")
+        put_text(f"You have searched for {count} CVs | Search history shown above. ")
         
         put_text("--------------------------")
         #clear(scope=- 1) 
