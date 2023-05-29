@@ -60,7 +60,7 @@ def predict_resume_scoring(job_title,skill,education,experience):
     database['Total_Score'] = (database['education_score'] + database['skill_score'] + database['experience_score'])/3
     database['Total_Score'] = np.round(database['Total_Score'])
     
-    selected_resume = database[database['Total_Score']>= 60]
+    selected_resume = database[database['Total_Score']>= 50]
     selected_resume = selected_resume[['file_name','Total_Score']]
     selected_resume.columns = ['Matched_CV','Score']
     selected_resume = selected_resume.sort_values(by = ['Score'],ascending=False)
