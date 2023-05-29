@@ -110,7 +110,7 @@ def cv_parser():
         put_text('------------------------------------------------')
         #put_text(df)
         with put_loading():
-            put_code("Plz Wait.. While we work our charm !! Fetching top CVs for you..")
+            put_code("Plz Wait.. While we work our charm !! Fetching top matched CVs for you..")
             time.sleep(3)  # Some time-consuming operations
         put_text("Matched Results : ")
         
